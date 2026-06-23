@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-bug-reproduction",
-  "version": "1.0.0",
-  "description": "Bug Reproduction Studio — Create minimal reproduction environments, write failing tests, verify clean reproduction",
+  "version": "1.0.1",
+  "description": "Bug Reproduction Studio \u2014 Create minimal reproduction environments, write failing tests, verify clean reproduction",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-bug-reproduction",
   "homepage": "https://cortexprism.io/marketplace/plugins/bug-reproduction",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "bug_setup_env",
       "description": "Set up minimal reproduction environment",
       "params": []
     },
-    { "name": "bug_write_test", "description": "Write minimal failing test case", "params": [] },
+    {
+      "name": "bug_write_test",
+      "description": "Write minimal failing test case",
+      "params": []
+    },
     {
       "name": "bug_verify",
       "description": "Verify reproduction is clean and minimal",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
